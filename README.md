@@ -13,6 +13,8 @@ Research the following term and summarize your findings on it two to three sente
 
 * `higher-order function`
 
+"Higher order functions, at a basic level, are functions that either take a function as an argument or return a function as a value.  In a more abstract sense, Higher Order functions allow you simple repetitive and potentially bug prone code to be expressed in a much more simple way:  They allow you to say what you 'mean' to do instead of all of the details of actually doing it"
+
 
 Pretending we implemented the following methods, update this README with a description of each of the following and an example you've created:
 
