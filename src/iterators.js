@@ -74,7 +74,7 @@ var Iterators = (function() {
     reduce: function(array, action) {
       var result = 0;
       for (var i = 0; i < array.length; i++) {
-        action(total, array[i]);
+        result = action(result, array[i]);
       };
       return result;
     }
