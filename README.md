@@ -75,7 +75,6 @@ Use the notes provided to help guide you explanation.
 
 
 
-
 ### Phase-2 
 
 * Write a test in the `test` folder for `min` and implement it in the `src/iterators.js` folder. There is a test for a `max` method already if you'd like to use that as inspiration. 
