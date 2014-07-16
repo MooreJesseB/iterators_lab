@@ -55,7 +55,9 @@ filter([4, 7, 1, 9, -3, 12], function(element){
 
 would return the following array:  [7, 9, 12];
 
-* `reduce`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) - Takes an array and a function and applies an operation to each element of an array to return a single, total number.  Ex:
+* `reduce`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+
+Takes an array and a function and applies an operation to each element of an array to return a single, total number.  Ex:
 
 reduce([1,2,3,4], function(a, b){
 	return a + b;
@@ -63,7 +65,9 @@ reduce([1,2,3,4], function(a, b){
 
 would return the value of 10, the total of adding up all of the numbers in the array.
 
-* `reject`: [note](http://underscorejs.org/#reject) - Takes an array and a function and returns a new array of all the elements that did not pass the test in the function.  The opposite of filter. Ex:
+* `reject`: [note](http://underscorejs.org/#reject) 
+
+Takes an array and a function and returns a new array of all the elements that did not pass the test in the function.  The opposite of filter. Ex:
 
 reject([1,2,3,4,5,6], function(element) {
 	return element > 3;
