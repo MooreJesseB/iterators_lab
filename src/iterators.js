@@ -9,16 +9,16 @@ var Iterators = (function() {
         }
       };
       return max;
-    }
+    },
     min: function(numList){
       var min = Infinity;
       for (var i = 0; i < numList.length; i++) {
         if (numList[i] < min) {
-          min = numlist[i];
+          min = numList[i];
         }
       };
       return min;
-    }
+    },
 
     // spec for each function
     // recieve an array and a function
@@ -31,7 +31,7 @@ var Iterators = (function() {
         action(array[i], i);
       };
       return array;
-    }
+    },
 
     // spec for map function
     // recieve an array and a function
@@ -42,11 +42,10 @@ var Iterators = (function() {
     map: function(array, action) {
       var returnArr = [];
       for (var i = 0; i < array.length; i++) {
-        returnArr[i] = action(array[i]) { 
-        }
+        returnArr[i] = action(array[i]);
       };
       return returnArr;
-    }
+    },
 
     // spec for filter
     // recieve an array and a function
@@ -58,12 +57,12 @@ var Iterators = (function() {
       var returnArr = [];
       for (var i = 0; i < array.length; i++) {
         var element = action(array[i])
-        if (action(element !== undefined) {
-          returnArr.push(element);
+        if (action(element) !== undefined || action(element !== null)){
+          returnArr.push(action(element));
         }
       };
       return returnArr;
-    }
+    },
 
     // spec for reduce
     // recieve an array and a function
@@ -77,7 +76,7 @@ var Iterators = (function() {
         result = action(result, array[i]);
       };
       return result;
-    }
+    },
 
     // spec for reject
     // recieve an array and a function
